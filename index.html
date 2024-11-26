@@ -19,7 +19,145 @@
   </head>
   <body>
     <!-- YOUR HTML GOES HERE -->
-
+    <body>
+      <header>
+          <nav>
+              <ul>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#maps">Maps</a></li>
+                  <li><a href="#learn-more">Learn More</a></li>
+              </ul>
+          </nav>
+      </header>
+      <main>
+          <section id="about">
+              <h1>Amazon Rainforest: Climate Change Effects</h1>
+              <p>The Amazon rainforest has faced significant changes due to deforestation, climate change, and biodiversity loss. This website provides an interactive view of how these effects have unfolded over the years.</p>
+          </section>
+          <section id="maps">
+              <h2>Interactive Map</h2>
+              <p>Select a year to see the impact of deforestation, biodiversity loss, or mining:</p>
+              
+              <!-- Buttons for map interaction -->
+              <div id="map-filters">
+                  <button id="deforestation-btn">Deforestation</button>
+                  <button id="biodiversity-btn">Biodiversity</button>
+                  <button id="mining-btn">Mining</button>
+              </div>
+              
+              <!-- Map container -->
+              <div id="map-container">
+                  <!-- Placeholder for the map -->
+                  <p>The map will be displayed here.</p>
+              </div>
+          </section>
+          <section id="learn-more">
+              <h2>Learn More</h2>
+              <p>Explore in-depth reports, datasets, and tools to understand the challenges facing the Amazon rainforest.</p>
+          </section>
+      </main>
+      <footer>
+          <p>© 2024 Amazon Rainforest Project. All rights reserved.</p>
+      </footer>
     <!-- YOUR EXTERNAL PLUG-IN MAY ASK YOU TO PUT A SCRIPT TAG HERE. -->
   </body>
 </html>
+
+<style>
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff; /* White background */
+    color: #333333; /* Dark text */
+    line-height: 1.6;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #996633; /* Brown background */
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff; /* White text */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #99cc66; /* Light green on hover */
+}
+
+/* Main Content */
+main {
+    padding: 40px 15px;
+    text-align: center;
+}
+
+/* Section Titles */
+h1, h2 {
+    color: #99cc66; /* Light green */
+    margin-bottom: 20px;
+}
+
+/* Buttons for Map Filters */
+#map-filters {
+    margin-bottom: 20px;
+}
+
+#map-filters button {
+    background-color: #99cc66; /* Light green */
+    color: #333333; /* Dark text */
+    padding: 12px 24px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#map-filters button:hover {
+    background-color: #ff9966; /* Light orange on hover */
+}
+
+/* Map Container */
+#map-container {
+    width: 100%;
+    height: 500px;
+    background-color: #99cccc; /* Light cyan */
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #333333; /* Dark background */
+    color: #ffffff; /* White text */
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+}
+</style>
