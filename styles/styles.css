@@ -6,17 +6,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-@media screen and (max-width: 320px) {
-    ul {
-      flex-direction: column;
-    }
-  }
 
 body {
     background: magenta;
     font-family: 'Poppins', sans-serif;
-    background-color: #333333;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #333333;
     line-height: 1.6;
     max-width: 80ch;
     line-height: 1.6;
@@ -50,35 +45,53 @@ p {
     box-sizing: border-box;
 }
 
-/* Header and Navigation */
 header {
     background-color: #333333; 
-    padding: 0 auto;
-    margin: 0 auto;
-    text-align: right;
+    display: flex;              /* Enable Flexbox */
+    align-items: center;        /* Vertically center content */
+    justify-content: space-between; /* Space between <p> and <nav> */
+    padding: 0 20px;            /* Add horizontal padding for spacing */
+    height: 100px;              /* Set a consistent height for the header */
 }
 
-nav ul {
+header img {
+    height: 100%;                
+    max-height: 100%;          
+    object-fit: contain;        
+    margin-right: 10px;        
+}
+
+header p {
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    color: #99cc66;
+    font-size: 48px;
+    margin: 0;
+   
+}
+
+header nav ul {
     list-style: none;
-    display: flex;
-    justify-content: flex-end; /* Right-aligned navigation */
-    padding: 0 auto;
+    display: flex;/* Display navigation items in a row */
+    margin: 0;
+    padding: 0;
 }
 
-nav ul li {
+header nav ul li {
     margin: 0 15px;
 }
 
-nav ul li a {
+header nav ul li a {
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
 }
 
-nav ul li a:hover {
+header nav ul li a:hover {
     color: #99cc66;
 }
+
 
 /* Buttons for Map Filters */
 #map-filters {
@@ -129,4 +142,12 @@ footer {
 footer p {
     margin: 0;
 }
+
+@media (max-width: 1080px) {
+    header {
+        text-align: center;
+    }
+}
+
+
 </style>
