@@ -9,14 +9,16 @@
     <!-- PUT A DESCRIPTION IN HERE -->
     <meta name="description" content="describe content of the page here...." />
     <!-- LINK TO NORMALIZE (FOR CONSISTENCY) -->
-    <link rel="stylesheet" href="styles.normalize.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
     <!-- LINK TO ANY FRAMEWORK STYLES HERE-->
     <!-- LINK TO YOUR STYLES -->
     <link rel="stylesheet" href="styles/styles.css" />
     <!-- LINK TO EXTERNAL JS LIBRARIES HERE -->
     <!-- LINK TO YOUR JS HERE. NOTE THE DEFER ATTRIBUTE. -->
-    <script src="scripts/scripts.js" defer></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="scripts/scripts.js" defer></script>
+
   </head>
   <body>
     <!-- YOUR HTML GOES HERE -->
@@ -52,8 +54,7 @@
             <div id="map" role="region" aria-label="Amazon Rainforest Map"></div>
           </section>
           
-                <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-                <script src="map.js"></script>
+                <script src="scripts/map.js"></script>
           </section>
           <section id="learn-more">
               <h2>Learn More</h2>
