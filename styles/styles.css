@@ -67,29 +67,145 @@ header p {
     color: #99cc66;
     font-size: 48px;
     margin: 0;
-   
+}
+
+@media screen and (max-width: 1145px) {
+    header p {
+        font-size: 24px; /* Smaller font size for screens with width less than 768px */
+        text-align: center;
+    }
+}
+
+/* Media query for very small screens (e.g., mobile devices) */
+@media screen and (max-width: 480px) {
+    header p {
+        font-size: 14px; /* Even smaller font size for screens less than 480px */
+    }
 }
 
 header nav ul {
     list-style: none;
-    display: flex;/* Display navigation items in a row */
-    margin: 0;
+    display: flex; /* Arrange the navigation items in a row */
     padding: 0;
+    margin: 0;
 }
 
+/* Style for individual list items */
 header nav ul li {
-    margin: 0 15px;
+    margin: 0 15px; /* Add spacing between the items */
 }
 
+/* Style for the links */
 header nav ul li a {
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
+    padding: 10px 15px; /* Optional: Add padding for the buttons */
+    border: 2px solid transparent; /* Initially no border */
+    border-radius: 5px; /* Rounded corners for the button */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition on hover */
 }
 
+/* Hover effect for the links */
 header nav ul li a:hover {
-    color: #99cc66;
+    background-color: #ff9966; /* Button background on hover */
+    color: #333333; /* Change text color on hover */
+    border-color: #333333; /* Border color on hover */
+}
+
+/* Optional: Active state for the links */
+header nav ul li a:active {
+    background-color: #ffcc99; /* Lighter color on click */
+}
+
+/* Style the article container */
+.overlay-container {
+    position: relative;
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Optional: Restrict the container width */
+    margin: 0 auto; /* Center the container horizontally */
+    overflow: hidden; /* Ensure no content spills outside */
+}
+
+/* Style the image */
+.overlay-container img {
+    display: block;
+    width: 100%; /* Scale to fit the screen */
+    max-height: 500px; /* Restrict the height */
+    object-fit: cover; /* Ensures the image scales proportionally and fills the area */
+}
+
+/* Add the semi-transparent overlay with a gradient */
+.overlay-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Make sure the overlay spans the full height of the image */
+    background: linear-gradient(to bottom, rgba(51, 51, 51, 0.5), rgba(51, 51, 51, 0)); /* Gradient from 50% transparent black to fully transparent */
+    z-index: 1; /* Place it above the image but below the text */
+}
+
+/* Style the title overlay */
+.overlay-title {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 20px; /* Align to the left */
+    transform: translateY(-50%); /* Center vertically with precision */
+    z-index: 2; /* Place above the overlay */
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif; /* Use Poppins font */
+    font-size: 80px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Optional: Add a subtle shadow for better readability */
+}
+
+@media screen and (max-width: 768px) {
+    .overlay-title {
+        font-size: 50px; /* Smaller font size for screens with width less than 768px */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .overlay-title {
+        font-size: 30px; /* Even smaller font size for very small screens */
+    }
+}
+
+
+/* Footer Background */
+.overlay-container footer {
+    background-color: #ffffff; /* White background */
+    padding: 5px 10px; /* Compact padding */
+    width: 100%; /* Ensure the footer spans the full width */
+    text-align: right; /* Align text to the right */
+    box-sizing: border-box; /* Ensure padding is included in total width */
+}
+
+/* Footer Text Styling */
+.overlay-container footer p {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px; /* Compact font size */
+    color: #333333; /* Default text color */
+    display: inline-block; /* Ensure the paragraph does not take the full width */
+}
+
+/* Link Styling */
+.overlay-container footer p a {
+    text-decoration: none; /* Remove underline */
+    color: #0066cc; /* Blue color for hyperlink */
+    font-weight: bold; /* Optional: Make it stand out */
+}
+
+.overlay-container footer p a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #ff9966; /* Optional: Change color on hover */
+}
+
+.overlay-container footer p a:active {
+    color: #333333; /* Change color when clicked */
 }
 
 
@@ -146,6 +262,14 @@ footer p {
 @media (max-width: 1080px) {
     header {
         text-align: center;
+    }
+}
+
+@media (max-width: 605px) {
+    /* Adjust header */
+    header {
+        text-align: center; /* Center the header */
+        padding: 10px; /* Add padding for better spacing */
     }
 }
 
