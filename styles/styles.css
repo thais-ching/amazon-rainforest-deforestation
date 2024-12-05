@@ -19,20 +19,28 @@ body {
     padding: 0 auto;
 }
 
-h1, h2 {
+h1 {
+    text-align: center;
+    font-family: 'DM Serif Display', serif;
+    font-size: 3rem;
+    color: #99cc66;
+    margin-bottom: 2rem;
+}
+
+h2 {
     text-align: center;
     font-family: 'DM Serif Display', serif;
     font-size: 2.25rem;
-    color: #99cc66;
+    color: #996633;
     margin-bottom: 2rem;
-    font-size: 2.25rem; /* 36px */
 }
 
 p {
     font-family: 'Poppins', sans-serif;
-    font-size: 0.875rem;
+    font-size: 1rem;
     line-height: 1.6;
-    max-width: 80ch;
+    letter-spacing: 1px;
+    max-width: 75ch;
     margin: 0 auto;
     text-align: left;
     margin-bottom: 1.5rem;
@@ -54,11 +62,11 @@ header {
     height: 100px;              /* Set a consistent height for the header */
 }
 
-header img {
-    height: 100%;                
-    max-height: 100%;          
-    object-fit: contain;        
-    margin-right: 10px;        
+#header-logo {
+    width: 120px;               /* Set the width of the logo image */
+    height: auto;               /* Maintain aspect ratio */
+    object-fit: contain;        /* Ensure image fits without distortion */
+    margin-right: 10px;         /* Space between the logo and text */
 }
 
 header p {
@@ -209,6 +217,114 @@ header nav ul li a:active {
         font-size: 30px; /* Even smaller font size for very small screens */
     }
 }
+
+blockquote {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 800;
+    text-align: center;
+    margin: 20px auto;
+    position: relative;
+    padding: 20px 20px;
+    color: #333;
+    max-width: 40ch;
+}
+
+blockquote::before {
+    content: "“";
+    font-size: 4rem;
+    color: #ff9966;
+    position: absolute;
+    left: 0;
+    top: -10px;
+}
+
+blockquote::after {
+    content: "”"; /* Closing quotation mark */
+    font-size: 4rem;
+    color: #ff9966;
+    position: absolute;
+    right: 0;
+    top: -10px;
+}
+
+
+/* General styling for the figures section */
+.figures-section {
+    display: flex; /* Use flexbox to arrange figures side by side */
+    justify-content: center; /* Center the figures horizontally */
+    gap: 20px; /* Space between each figure */
+    padding: 40px;
+  }
+  
+  /* General styling for each figure */
+  figcaption, figure {
+    background-color: #f0f0f0; /* Grey background */
+    border: 2px solid #ccc; /* Grey border */
+    border-radius: 10px; /* Rounded borders */
+    width: 300px; /* Fixed width for each figure */
+    text-align: center; /* Center text and contents */
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Stack the image, text, and button vertically */
+    align-items: center; /* Center items horizontally */
+  }
+  
+/* Specific styling for the deforestation image */
+#deforestation-img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%; /* Circle shape */
+    margin-bottom: 15px;
+  }
+  
+  /* Specific styling for the mining image */
+  #mining-img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%; /* Circle shape */
+    margin-bottom: 15px;
+  }
+  
+  /* Specific styling for the agriculture image */
+  #agriculture-img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%; /* Circle shape */
+    margin-bottom: 15px;
+  }
+  
+  figcaption p {
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #333;
+    max-width: 40ch; /* Limit text to 40 characters per line */
+    margin-bottom: 20px; /* Space between text and button */
+  }
+  
+  /* Styling for "Learn More" buttons */
+  .figure-button {
+    display: inline-block;
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #333;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .figure-button:hover {
+    background-color: #ff9966; /* Hover background */
+    color: #333; /* Hover text color */
+  }
+  
+
 
 
 /* Footer */

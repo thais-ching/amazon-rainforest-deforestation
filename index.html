@@ -23,19 +23,23 @@
   <body>
     <!-- YOUR HTML GOES HERE -->
 
-      <header>
-        <img src="images/Logo 1.png" alt="Logo">
-        <!-- designed the logo using Canva's free services -->
-        <p>The Amazon Rainforest</p>
-          <nav>
-              <ul>
-                <li><a href="#about">About</a></li>  
-                <li><a href="learnmore.html">Learn More</a></li>
-              </ul>
-          </nav>
-      </header>
-      <main>
-       
+    <header>
+      <!-- Link the image to the main page -->
+      <a href="index.html">
+          <img src="images/Logo 1.png" alt="Logo" id="header-logo">
+      </a>
+      <!-- designed the logo using Canva's free services -->
+      <p>The Amazon Rainforest</p>
+      <nav>
+          <ul>
+              <li><a href="#about">About</a></li> 
+              <li><a href="map.html">Map</a></li> 
+              <li><a href="learnmore.html">Learn More</a></li>
+          </ul>
+      </nav>
+  </header>
+      
+      <main> 
         <article class="overlay-container">
             <img src="images/Ecuador Amazon.jpeg" alt="Misty aerial view of a rainforest." />
             <header class="overlay-title">Deforestation on the Amazon</header>
@@ -48,14 +52,35 @@
         <section id="about">
               <h1>About this project</h1>
               <p>The Amazon Rainforest has faced significant changes due to deforestation and climate change. This website provides an interactive view of how these effects have unfolded over the years.</p>
-              <p>Discover the effects of deforestation on the Amazon Rainforest over the years. The Amazon Rainforest, commonly called the "Lungs of the Earth," is an immense tropical forest teeming with life and ecological significance, stretching across much of South America. Renowned for its extraordinary biodiversity, it serves as a cornerstone of the planet's ecological balance.</p>
-              <p>Flowing for nearly 4,000 miles through several countries, the Amazon River acts as the rainforest's lifeline. Its vast basin has created a singular environment that continues to fascinate and inspire people worldwide.</p>
-          </section>
-         
-          <section id="map">
-              <h2>Forest Loss</h2>
-              <p>Select a year to see how the impact of climate change has changed:</p>
+              <p>The Amazon Rainforest, commonly called the "Lungs of the Earth," is an immense tropical forest teeming with life and ecological significance, stretching across much of South America. Renowned for its extraordinary biodiversity, it serves as a cornerstone of the planet's ecological balance. the rainforest is not only home to an incredible diversity of species, it also has a critical cooling effect on the planet because its trees channel heat high into the atmosphere.</p>
+              <blockquote>
+                "The rainforest is not only home to an incredible diversity of species, it also has a critical cooling effect on the planet because its trees channel heat high into the atmosphere."
+              </blockquote>
+        </section>
 
+        <section class="figures-section">
+          <figure id="deforestation">
+            <h2>Deforestation</h2>
+            <img src="images/Deforestation.jpeg" alt="Logging of trees in the rainforest." id="deforestation-img" />
+            <p>"Deforestation is the purposeful clearing of forested land. Throughout history and into modern times, forests have been razed to make space for agriculture and animal grazing, and to obtain wood for fuel, manufacturing, and construction."</p>
+            <a href="https://education.nationalgeographic.org/resource/deforestation/" class="figure-button">Learn More</a>
+          </figure>
+        
+          <figure id="mining">
+            <h2>Mining</h2>
+            <img src="images/Mining.jpeg" alt="Illegal mining activities in Brazil that destroyed the forest." id="mining-img" />
+            <p>"Since the turn of the century, mining has increased by 52% due to surging demand for coal, iron, industrial minerals, and other metals. In some cases, this extraction has come at the expense of forests, along with burdens to the communities who rely on them."</p>
+            <a href="https://www.wri.org/insights/how-mining-impacts-forests" class="figure-button">Learn More</a>
+          </figure>
+        
+          <figure id="agriculture">
+            <h2>Agriculture</h2>
+            <img src="images/Agriculture.jpeg" alt="Aerial drone view of large-scale deforestation in the rainforest of Borneo to make way for palm oil plantations." id="agriculture-img" />
+            <p>As we rely on industrial agricultural commodities such as palm, soy, and industrial-produced meat and dairy, we are losing forests and accelerating a climate and ecological emergency.</p>
+            <a href="https://www.greenpeace.org/usa/forests/issues/agribusiness/" class="figure-button">Learn More</a>
+          </figure>
+        </section>
+        
       </main>
       <footer>
           <p>© 2024 The Jungle Watch Project.</p>
