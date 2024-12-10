@@ -223,6 +223,8 @@ header nav ul li a:active {
 @media screen and (max-width: 480px) {
     .overlay-title {
         font-size: 30px;
+        top: 50%;
+        transform: translateY(-50%);
     }
 }
 
