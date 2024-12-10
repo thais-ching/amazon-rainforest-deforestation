@@ -25,24 +25,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Background images corresponding to each year
     const backgroundImages = [
-        'images/forest 1.png', // Replace with actual paths for backgrounds
-        'images/forest 1.png',
-        'images/forest 2.png',
-        'images/forest 2.png',
-        'images/forest 3.png',
-        'images/forest 3.png',
-        'images/forest 4.png',
-        'images/forest 4.png',
-        'images/forest 5.png',
-        'images/forest 5.png',
-        'images/forest 6.png',
-        'images/forest 6.png',
-        'images/forest 7.png',
-        'images/forest 7.png',
-        'images/forest 8.png',
-        'images/forest 8.png',
-        'images/forest 9.png',
-        'images/forest 9.png'
+        'images/forest-1.png', // Replace with actual paths for backgrounds
+        'images/forest-1.png',
+        'images/forest-2.png',
+        'images/forest-2.png',
+        'images/forest-3.png',
+        'images/forest-3.png',
+        'images/forest-4.png',
+        'images/forest-4.png',
+        'images/forest-5.png',
+        'images/forest-5.png',
+        'images/forest-6.png',
+        'images/forest-6.png',
+        'images/forest-7.png',
+        'images/forest-7.png',
+        'images/forest-8.png',
+        'images/forest-8.png',
+        'images/forest-9.png',
+        'images/forest-9.png'
     ];
 
     // Event listener for slider input
