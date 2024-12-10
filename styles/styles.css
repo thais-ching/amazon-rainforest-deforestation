@@ -64,7 +64,7 @@ p {
 
 
 header {
-    background-color: #333333; 
+    background-color: #003300; 
     display: flex;              /* Enable Flexbox */
     align-items: center;        /* Vertically center content */
     justify-content: space-between; /* Space between <p> and <nav> */
@@ -277,8 +277,8 @@ blockquote::after {
   
   /* General styling for each figure */
   figcaption, figure {
-    background-color: #f0f0f0; /* Grey background */
-    border: 2px solid #ccc; /* Grey border */
+    background-color: #003300; /* Grey background */
+    border: 2px solid #333; /* Grey border */
     border-radius: 10px; /* Rounded borders */
     width: 300px; /* Fixed width for each figure */
     text-align: center; /* Center text and contents */
@@ -287,6 +287,17 @@ blockquote::after {
     flex-direction: column; /* Stack the image, text, and button vertically */
     align-items: center; /* Center items horizontally */
   }
+
+  figure p {
+  color: #CCFF99;
+  font-size: 1rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+figure h2 {
+    color: #CCFF99;
+}
   
 /* Specific styling for the deforestation image */
 #deforestation-img {
@@ -318,7 +329,7 @@ blockquote::after {
   figcaption p {
     font-size: 1rem;
     line-height: 1.4;
-    color: #333;
+    color: #fff;
     max-width: 40ch; /* Limit text to 40 characters per line */
     margin-bottom: 20px; /* Space between text and button */
   }
@@ -584,7 +595,7 @@ body.forest {
 /* Footer */
 footer {
     margin-top: auto; /* Push footer to the bottom */
-    background-color: #333333;
+    background-color: #003300;
     color: #ffffff;
     padding: 20px;
     text-align: center;
