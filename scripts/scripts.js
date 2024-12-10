@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
     slider.dispatchEvent(new Event('input')); // Trigger input event to apply initial state
 });
 
-<script>
+
     // Get references to the slider and the color circles
     const yearSlider = document.getElementById('year-slider');
     const colorCircles = document.querySelectorAll('.color-circle');
@@ -85,4 +85,4 @@ document.addEventListener('DOMContentLoaded', () => {
             yearSlider.dispatchEvent(new Event('input'));
         });
     });
-</script>
+
