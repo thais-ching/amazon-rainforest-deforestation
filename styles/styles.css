@@ -224,7 +224,7 @@ header nav ul li a:active {
     .overlay-title {
         font-size: 30px;
         top: 50%;
-        transform: translateY(-50%);
+        transform: translateY(-70%);
     }
 }
 
