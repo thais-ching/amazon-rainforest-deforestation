@@ -6,13 +6,19 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background: magenta;
     font-family: 'DM Sans', sans-serif;
     background-color: #ffffff;
     color: #333333;
     line-height: 1.6;
-    max-width: 80ch;
     line-height: 1.6;
     margin: 0 auto;
     padding: 0 auto;
@@ -47,12 +53,6 @@ p {
     margin-bottom: 1.5rem;
 }
 
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 header {
     background-color: #333333; 
@@ -61,6 +61,9 @@ header {
     justify-content: space-between; /* Space between <p> and <nav> */
     padding: 0 20px;            /* Add horizontal padding for spacing */
     height: 100px;              /* Set a consistent height for the header */
+    width: 100%;                /* Make the header span the full width */
+    box-sizing: border-box;     /* Include padding in width */
+    margin: 0;                  /* Remove any default margins */
 }
 
 #header-logo {
@@ -121,12 +124,12 @@ header nav ul li a:active {
     background-color: #ffcc99; /* Lighter color on click */
 }
 
-/* Style the article container */
 .overlay-container {
     position: relative;
     width: 100%; /* Full width */
-    margin: 0 auto; /* Center the container horizontally */
+    margin: 0; /* Remove auto margins */
     overflow: hidden; /* Ensure no content spills outside */
+    box-sizing: border-box; /* Include padding and borders in width */
 }
 
 /* Style the image */
@@ -331,6 +334,16 @@ blockquote::after {
     color: #333; /* Hover text color */
   }
   
+  @media screen and (max-width: 768px) {
+    .figures-section {
+        flex-direction: column; /* Stack the figures vertically */
+        align-items: center; /* Center the figures horizontally */
+    }
+
+    .figures-section figure {
+        width: 80%; /* Make figures take up more width to fit on smaller screens */
+    }
+}
 
   .slider-container {
     max-width: 900px; 
@@ -339,11 +352,12 @@ blockquote::after {
     font-family: Arial, sans-serif;
     background-color: #ffffff;
     padding: 20px;
+    margin-top: 0;
 }
 
 .slides {
     position: relative;
-    height: 600px;
+    height: 500px;
     overflow: hidden;
 }
 
@@ -363,7 +377,7 @@ blockquote::after {
 }
 
 .slider-controls {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 input[type="range"] {
@@ -573,4 +587,77 @@ footer p {
         text-align: center; /* Center the header */
         padding: 10px; /* Add padding for better spacing */
     }
+}
+
+@media screen and (max-width: 648px) {
+    /* Adjust the body font size and layout for smaller screens */
+    body {
+        font-size: 1rem; /* Smaller font size for readability */
+        padding: 0 10px; /* Add padding on the sides */
+    }
+
+    header {
+        flex-direction: column; /* Stack logo and text vertically */
+        height: auto; /* Allow the header to expand based on content */
+        padding: 10px; /* Reduce padding to fit better */
+        text-align: center; /* Center text for better alignment */
+    }
+
+    #header-logo {
+        width: 100px; /* Resize logo for smaller screens */
+        margin-bottom: 10px; /* Add space below the logo */
+    }
+
+    /* Adjust the font size of the header text */
+    header p {
+        font-size: 14px; /* Smaller font size */
+    }
+
+    /* Adjust overlay container for mobile */
+    .overlay-container {
+        padding: 10px; /* Reduce padding inside the overlay container */
+    }
+
+    .overlay-container img {
+        width: 100%; /* Make the image take full width */
+        max-height: 300px; /* Limit the image height for mobile */
+    }
+
+    /* Adjust title overlay for smaller screens */
+    .overlay-title {
+        font-size: 40px; /* Smaller font size for title */
+        left: 15px; /* Adjust left position for better fit */
+        top: 60%; /* Adjust vertical alignment */
+    }
+
+    /* Adjust footer in the overlay */
+    .overlay-container footer {
+        font-size: 0.8rem; /* Reduce font size for footer */
+        padding: 5px 10px; /* Adjust padding for the footer */
+    }
+
+    .overlay-container footer p {
+        font-size: 0.9rem; /* Slightly smaller font size */
+    }
+    
+    /* Adjust footer layout and padding */
+    footer {
+        font-size: 0.8rem; /* Smaller font size for better fit */
+        padding: 10px 5px; /* Reduce padding to save space */
+    }
+
+    footer p {
+        font-size: 0.9rem; /* Slightly smaller font size */
+    }
+
+    .project-sections {
+        flex-direction: column; /* Stack the section buttons vertically */
+        gap: 10px; /* Reduce space between buttons */
+    }
+
+    /* Adjust the section button width */
+    .section-button {
+        max-width: 100%; /* Make buttons take full width */
+    }
+
 }

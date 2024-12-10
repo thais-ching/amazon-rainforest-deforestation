@@ -62,3 +62,4 @@ document.addEventListener('DOMContentLoaded', () => {
     slider.value = 0; // Ensure the slider starts at the far left (2001)
     slider.dispatchEvent(new Event('input')); // Trigger input event to apply initial state
 });
+
