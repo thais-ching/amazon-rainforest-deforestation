@@ -556,8 +556,8 @@ body.forest {
 /* Style for the buttons */
 .btn {
     display: block;
-    background-color: #114069; 
-    color: #fff; 
+    background-color: #99cccc; 
+    color: #333; 
     font-size: 1.1rem;
     font-weight: bold;
     text-decoration: none;
