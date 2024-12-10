@@ -56,10 +56,10 @@ p {
     color: #555555;
     line-height: 1.6;
     letter-spacing: 1px;
-    max-width: 75ch;
+    max-width: 65ch;
     margin: 0 auto;
     padding: 10px;
-    text-align: left;
+    text-align: center;
     margin-bottom: 1.5rem;
 }
 
@@ -583,13 +583,6 @@ body.forest {
 
 .section-button a.active {
     background-color: #ff5733; 
-}
-
-#learn-more p {
-    text-align: center;
-    max-width: 65ch;
-    line-height: 1.6;
-    margin: 0 auto;
 }
 
 
