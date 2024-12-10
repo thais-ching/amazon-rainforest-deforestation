@@ -170,7 +170,7 @@ header nav ul li a:active {
     transform: translateY(-50%); /* Center vertically with precision */
     z-index: 2; /* Place above the gradient */
     color: #ffffff;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'DM Serif Display', serif;
     font-size: 80px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Subtle shadow */
     background: transparent; /* Ensure no background is applied */
