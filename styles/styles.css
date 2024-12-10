@@ -137,6 +137,7 @@ header nav ul li a:active {
 .overlay-container {
     position: relative;
     width: 100%; /* Full width */
+    height: 400px;
     margin: 0; /* Remove auto margins */
     overflow: hidden; /* Ensure no content spills outside */
     box-sizing: border-box; /* Include padding and borders in width */
