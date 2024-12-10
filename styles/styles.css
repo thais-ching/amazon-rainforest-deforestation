@@ -45,6 +45,7 @@ h2 {
     font-size: 2.25rem;
     color: #663300;
     margin-bottom: 2rem;
+    padding-top: 20px;
 }
 
 p {
@@ -520,13 +521,16 @@ body.forest {
     text-decoration: underline;
 }
 
+.color-circle.active {
+    border: 2px solid #fff; /* Add a border to highlight the active color circle */
+}
 
 /* Style for the project sections container */
 .project-sections {
     display: flex;
     justify-content: center;
     gap: 20px; 
-    margin-top: 50px; 
+    margin-top: 20px; 
     text-align: center;
 }
 
@@ -566,6 +570,10 @@ body.forest {
 
 .section-button a.active {
     background-color: #ff5733; 
+}
+
+#learn-more p {
+    text-align: center;
 }
 
 

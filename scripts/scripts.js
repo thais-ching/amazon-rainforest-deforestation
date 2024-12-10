@@ -63,3 +63,26 @@ document.addEventListener('DOMContentLoaded', () => {
     slider.dispatchEvent(new Event('input')); // Trigger input event to apply initial state
 });
 
+<script>
+    // Get references to the slider and the color circles
+    const yearSlider = document.getElementById('year-slider');
+    const colorCircles = document.querySelectorAll('.color-circle');
+    
+    // Add event listener for slider change
+    yearSlider.addEventListener('input', (event) => {
+        const yearIndex = event.target.value; // Get the value of the slider
+        // Remove 'active' class from all color circles
+        colorCircles.forEach(circle => circle.classList.remove('active'));
+        // Add 'active' class to the color circle corresponding to the year
+        colorCircles[yearIndex].classList.add('active');
+    });
+
+    // Add event listeners to the color circles to jump to the corresponding year
+    colorCircles.forEach((circle, index) => {
+        circle.addEventListener('click', () => {
+            yearSlider.value = index; // Set the slider value to the clicked year
+            // Trigger the input event to update the map image
+            yearSlider.dispatchEvent(new Event('input'));
+        });
+    });
+</script>
