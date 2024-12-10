@@ -574,9 +574,9 @@ body.forest {
 
 #learn-more p {
     text-align: center;
-    max-width: 75ch;
+    max-width: 65ch;
     line-height: 1.6;
-    margin-bottom: 1.5rem;
+    margin: 0 auto;
 }
 
 
