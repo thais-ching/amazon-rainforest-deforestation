@@ -21,7 +21,7 @@
 
   </head>
 
-  <body>
+  <body class="forest">
   
     <header>
         <!-- Link the image to the main page -->
@@ -29,20 +29,129 @@
             <img src="images/Logo 1.png" alt="Logo" id="header-logo">
         </a>
         <!-- designed the logo using Canva's free services -->
-        <p>The Amazon Rainforest</p>
         <nav>
             <ul>
                 <li><a href="index.html">About</a></li> 
                 <li><a href="map.html">Map</a></li> 
-                <li><a href="learnmore.html">Learn More</a></li>
+                <li><a href="project.html">Project</a></li>
             </ul>
         </nav>
     </header>
-    
-    <section id="map">
-        <h1>Forest Loss</h1>
-        <p>Select a year to see how the impact of climate change has changed:</p>
+           
+    <section class="slider-container" aria-labelledby="gallery-title">
+        <h2 id="gallery-title">Forest Loss Over Time</h2>
+        <p>Use the slider to see how deforestation has impacted the Amazon:</p>
+        <div class="slider">
+            <div class="slides">
+                <img src="images/2001.png" alt="Map of deforestation in 2001">
+                <img src="images/2002.png" alt="Map of deforestation in 2002">
+                <img src="images/2003.png" alt="Map of deforestation in 2003">
+                <img src="images/2004.png" alt="Map of deforestation in 2004">
+                <img src="images/2005.png" alt="Map of deforestation in 2005">
+                <img src="images/2006.png" alt="Map of deforestation in 2006">
+                <img src="images/2007.png" alt="Map of deforestation in 2007">
+                <img src="images/2008.png" alt="Map of deforestation in 2008">
+                <img src="images/2009.png" alt="Map of deforestation in 2009">
+                <img src="images/2010.png" alt="Map of deforestation in 2010">
+                <img src="images/2011.png" alt="Map of deforestation in 2011">
+                <img src="images/2012.png" alt="Map of deforestation in 2012">
+                <img src="images/2013.png" alt="Map of deforestation in 2013">
+                <img src="images/2014.png" alt="Map of deforestation in 2014">
+                <img src="images/2015.png" alt="Map of deforestation in 2015">
+                <img src="images/2016.png" alt="Map of deforestation in 2016">
+                <img src="images/2017.png" alt="Map of deforestation in 2017">
+                <img src="images/2018.png" alt="Map of deforestation in 2018">
+            </div>
+        </div>
+        <div class="slider-controls">
+            <input type="range" min="0" max="17" step="1" id="year-slider" value="0" />
+        </div>
+        
+        <aside class="color-code">
+            <h3>Map Legend</h3>
+            <ul>
+                <li>
+                    <span class="color-circle" style="background-color: #e3e809;"></span>
+                    2001
+                </li>
+                <li>
+                    <span class="color-circle" style="background-color: #e4cc17;"></span>
+                    2002
+                </li>
+                <li>
+                    <span class="color-circle" style="background-color: #e7bb25;"></span>
+                    2003
+                </li>
+                <li>
+                    <span class="color-circle" style="background-color: #eaa532;"></span>
+                    2004
+                </li>
+                <li>
+                    <span class="color-circle" style="background-color: #ec9242;"></span>
+                    2005
+                </li>
+                <li>
+                    <span class="color-circle" style="background-color: #ee7d4f;"></span>
+                    2006
+                </li>
+                <li>
+                    <span class="color-circle" style="background-color: #f0685a;"></span>
+                    2007
+                </li>
+                <li>
+                    <span class="color-circle" style="background-color: #f35168;"></span>
+                    2008
+                </li>
+                <li>
+                    <span class="color-circle" style="background-color: #e74572;"></span>
+                    2009
+                </li>
+                <li>
+                    <span class="color-circle" style="background-color: #db3e76;"></span>
+                    2010
+                </li>
+                <li>
+                    <span class="color-circle" style="background-color: #ce367f;"></span>
+                    2011
+                </li>
+                <li>
+                    <span class="color-circle" style="background-color: #c02c82;"></span>
+                    2012
+                </li>
+                <li>
+                    <span class="color-circle" style="background-color: #b02488;"></span>
+                    2013
+                </li>
+                <li>
+                    <span class="color-circle" style="background-color: #a21c8f;"></span>
+                    2014
+                </li>
+                <li>
+                    <span class="color-circle" style="background-color: #931195;"></span>
+                    2015
+                </li>
+                <li>
+                    <span class="color-circle" style="background-color: #880a99;"></span>
+                    2016
+                </li>
+                <li>
+                    <span class="color-circle" style="background-color: #7603a0;"></span>
+                    2017
+                </li>
+                <li>
+                    <span class="color-circle" style="background-color: #6600a3;"></span>
+                    2018
+                </li>
+            </ul>
+        </aside>
     </section>
+    </section>
+
+    <aside class="map-source">
+        <p>Data and map obtained from:
+        <a href="https://earthobservatory.nasa.gov/images/145988/tracking-amazon-deforestation-from-above">Nasa Earth Observatory</a>
+        </p>
+    </aside>
 
     <footer>
         <p>© 2024 The Jungle Watch Project.</p>
