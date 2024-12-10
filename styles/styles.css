@@ -658,6 +658,38 @@ footer p {
     .overlay-container footer p {
         font-size: 0.9rem; /* Slightly smaller font size */
     }
+
+    .figures-section h2 {
+        font-size: 1.5rem; /* Smaller font size for h2 */
+    }
+
+    .figures-section p {
+        font-size: 1rem; /* Smaller font size for p */
+        text-align: center; /* Center align the paragraph */
+        padding: 0 15px; /* Add padding for better readability */
+    }
+
+     /* Adjust project section buttons layout for mobile */
+    .project-sections {
+        display: flex;
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center; /* Center the buttons */
+        gap: 15px; /* Space out buttons */
+    }
+
+/* Adjust individual section button styles */
+    .section-button {
+        width: 100%; /* Ensure buttons take up full width */
+        text-align: center; /* Center text inside buttons */
+}
+
+    .section-button a {
+        display: block; /* Make the anchor tag block-level for full width */
+        width: 100%; /* Ensure the links take up full width */
+        padding: 10px; /* Add padding to the links for better spacing */
+        text-align: center; /* Ensure text is centered */
+        font-size: 1rem; /* Adjust font size for readability */
+}   
     
     /* Adjust footer layout and padding */
     footer {
