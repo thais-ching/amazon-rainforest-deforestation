@@ -24,6 +24,13 @@ body {
     padding: 0 auto;
 }
 
+html, body {
+    height: 100%; /* Full height */
+    margin: 0;    /* Remove default margin */
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Stack content vertically */
+}
+
 h1 {
     text-align: center;
     font-family: 'DM Serif Display', serif;
@@ -527,6 +534,7 @@ body.forest {
 .section-button {
     flex: 1;
     max-width: 200px;
+    margin-bottom: 10px;
 }
 
 /* Style for the buttons */
@@ -563,17 +571,20 @@ body.forest {
 
 /* Footer */
 footer {
+    margin-top: auto; /* Push footer to the bottom */
     background-color: #333333;
     color: #ffffff;
     padding: 20px;
     text-align: center;
     font-size: 0.875rem;
+    margin-top: 40px;
 }
 
 footer p {
     margin: 0;
     color:#99cc66;
 }
+
 
 @media (max-width: 1080px) {
     header {
@@ -644,20 +655,12 @@ footer p {
     footer {
         font-size: 0.8rem; /* Smaller font size for better fit */
         padding: 10px 5px; /* Reduce padding to save space */
+        margin-top: auto; /* Push footer to the bottom */
     }
-
+    
     footer p {
+        margin: 0; /* Remove default margin on the paragraph */
         font-size: 0.9rem; /* Slightly smaller font size */
     }
-
-    .project-sections {
-        flex-direction: column; /* Stack the section buttons vertically */
-        gap: 10px; /* Reduce space between buttons */
-    }
-
-    /* Adjust the section button width */
-    .section-button {
-        max-width: 100%; /* Make buttons take full width */
-    }
-
+    
 }
