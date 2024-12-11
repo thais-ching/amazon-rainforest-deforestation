@@ -723,13 +723,15 @@ body.forest {
     object-fit: cover; /* Maintain aspect ratio and cover container */
     opacity: 0; /* Start fully transparent */
     border-radius: 50%; /* Circle shape */
-    animation: fadeAnimation 8s infinite; /* Infinite loop animation */
+    animation: fadeInOutAnimation 8s infinite; /* Infinite loop animation */
 }
 
-/* Define the animation */
-@keyframes fadeAnimation {
-    0%, 37.5% { opacity: 1; } /* Show the current image for 3 seconds */
-    50%, 100% { opacity: 0; } /* Fade out and remain hidden */
+/* Define the updated animation to eliminate white space */
+@keyframes fadeInOutAnimation {
+    0%, 10% { opacity: 0; } /* Start transparent */
+    15%, 45% { opacity: 1; } /* Gradual fade-in and stay visible */
+    50%, 55% { opacity: 0; } /* Gradual fade-out */
+    55%, 100% { opacity: 0; } /* Prepare for the next image */
 }
 
 /* Stagger animations for each image */
@@ -740,7 +742,6 @@ body.forest {
 .fade-img:nth-child(2) {
     animation-delay: 4s; /* Delay the second image by half the animation duration */
 }
-
 
 /* Footer */
 footer {
