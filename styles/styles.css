@@ -371,7 +371,7 @@ figure h2 {
     }
 }
 
-  .slider-container {
+.slider-container {
     max-width: 900px; 
     margin: 0 auto;
     text-align: center;
@@ -406,25 +406,29 @@ figure h2 {
     margin-top: 10px;
 }
 
-
-
 input[type="range"] {
     width: 100%;
 }
 
+/* Media query for smaller screens */
 @media (max-width: 420px) {
     .slider-container {
         padding: 10px; /* Reduce padding for smaller screens */
     }
 
     .slides {
-        height: auto; /* Adjust height for smaller images */
+        height: 300px; /* Set a fixed height to prevent images from disappearing */
+    }
+
+    .slides img {
+        height: 100%; /* Ensure images fill the slide area */
     }
 
     .slider-controls {
         margin-top: 5px; /* Bring slider controls closer to the image */
     }
 }
+
 
 .color-code {
     margin-top: 20px;
