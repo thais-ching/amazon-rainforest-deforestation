@@ -1,4 +1,15 @@
 /* WRITE YOUR JS HERE... YOU MAY REQUIRE MORE THAN ONE JS FILE. IF SO SAVE IT SEPARATELY IN THE SCRIPTS DIRECTORY */
+
+const backToTopButton = document.querySelector('.back-to-top');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 200) { // Show button after scrolling down 200px
+        backToTopButton.style.display = 'flex';
+    } else {
+        backToTopButton.style.display = 'none';
+    }
+});
+
 document.addEventListener("DOMContentLoaded", function () {
     // Select the slider and ensure it exists
     const yearSlider = document.getElementById("year-slider");
