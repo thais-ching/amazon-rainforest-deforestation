@@ -411,6 +411,31 @@ figure h2 {
     }
 }
 
+.back-to-top {
+    position: fixed;
+    bottom: 50px; /* Position near the bottom of the viewport */
+    right: 20px; /* Position near the right of the viewport */
+    background-color: #99cccc; /* Button color */
+    color: #333; /* Text color */
+    font-size: 14px; /* Adjust font size */
+    padding: 10px 15px; /* Add some padding */
+    border-radius: 5px; /* Round corners */
+    text-decoration: none; /* Remove underline */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0.8; /* Slightly transparent */
+}
+
+.back-to-top:hover {
+    background-color: #ff9966; /* Change color on hover */
+    opacity: 1; /* Make fully opaque */
+    transform: translateY(-3px); /* Lift the button slightly */
+}
+
+.back-to-top:active {
+    transform: translateY(0); /* Reset on click */
+}
+
 .slider-container {
     max-width: 900px; 
     margin: 0 auto;
