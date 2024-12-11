@@ -406,8 +406,24 @@ figure h2 {
     margin-top: 10px;
 }
 
+
+
 input[type="range"] {
     width: 100%;
+}
+
+@media (max-width: 420px) {
+    .slider-container {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .slides {
+        height: auto; /* Adjust height for smaller images */
+    }
+
+    .slider-controls {
+        margin-top: 5px; /* Bring slider controls closer to the image */
+    }
 }
 
 .color-code {
@@ -543,7 +559,8 @@ body.forest {
 }
 
 /* Style for the project sections container */
-.project-sections {
+.section-buttons {
+    list-style: none;
     display: flex;
     justify-content: center;
     gap: 20px; 
@@ -551,11 +568,8 @@ body.forest {
     text-align: center;
 }
 
-/* Style for individual buttons */
-.section-button {
-    flex: 1;
-    max-width: 200px;
-    margin-bottom: 10px;
+.section-buttons li {
+    margin-bottom: 1em; /* Adds space between list items */
 }
 
 /* Style for the buttons */
@@ -589,6 +603,60 @@ body.forest {
     background-color: #ff5733; 
 }
 
+@media (max-width: 700px) {
+    .section-buttons {
+        flex-direction: column; /* Stack items vertically */
+        gap: 10px; /* Reduce the gap between buttons */
+    }
+
+    .btn {
+        width: 100%; /* Make buttons take full width */
+        max-width: 300px; /* Optional: limit the maximum width */
+        margin: 0 auto; /* Center buttons horizontally */
+    }
+}
+
+#learn-more {
+    text-align: center;
+
+}
+
+.image-container {
+    position: relative; /* Stack images on top of each other */
+    width: 160px; /* Set the width of the container */
+    height: 160px; /* Set the height of the container */
+    margin: 0 auto; /* Center the container */
+    padding-bottom: 10px;
+}
+
+.fade-img {
+    position: absolute; /* Stack images absolutely within the container */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensure images fill the container */
+    height: 100%; /* Maintain container height */
+    object-fit: cover; /* Maintain aspect ratio and cover container */
+    opacity: 0; /* Start fully transparent */
+    border-radius: 50%; /* Circle shape */
+    animation: fadeAnimation 8s infinite; /* Infinite loop animation */
+}
+
+/* Define the animation */
+@keyframes fadeAnimation {
+    0%, 37.5% { opacity: 1; } /* Show the current image for 3 seconds */
+    50%, 100% { opacity: 0; } /* Fade out and remain hidden */
+}
+
+/* Stagger animations for each image */
+.fade-img:nth-child(1) {
+    animation-delay: 0s; /* Start the first image immediately */
+}
+
+.fade-img:nth-child(2) {
+    animation-delay: 4s; /* Delay the second image by half the animation duration */
+}
+
+
 
 /* Footer */
 footer {
@@ -605,7 +673,6 @@ footer p {
     margin: 0;
     color:#99cc66;
 }
-
 
 @media (max-width: 1080px) {
     header {
