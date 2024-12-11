@@ -341,6 +341,15 @@ figure h2 {
     border-radius: 50%; /* Circle shape */
     margin-bottom: 15px;
   }
+
+  /* Specific styling for the livestock image */
+#livestock-img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%; /* Circle shape */
+    margin-bottom: 15px;
+  }
   
   figcaption p {
     font-size: 1rem;
