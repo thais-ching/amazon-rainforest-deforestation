@@ -60,6 +60,16 @@ h3 {
     padding-bottom: 10px;
 }
 
+h4 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color:#333;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
 p {
     font-family: 'DM Sans', sans-serif;
     font-size: 1.2rem;
@@ -235,6 +245,17 @@ header nav ul li a:active {
         font-size: 30px;
         top: 50%;
         transform: translateY(-70%);
+    }
+}
+
+
+@media screen and (max-width: 420px) {
+    .overlay-title {
+        font-size: 30px;
+        top: 0; /* Stick to the top of the container */
+        position: absolute; /* Ensure proper positioning */
+        width: 100%; 
+        text-align: center; /* Optional: Center the text horizontally */
     }
 }
 
