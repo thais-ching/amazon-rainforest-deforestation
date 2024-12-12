@@ -13,6 +13,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: magenta;
     font-family: 'DM Sans', sans-serif;
@@ -82,7 +86,6 @@ p {
     text-align: left;
     margin-bottom: 1.5rem;
 }
-
 
 header {
     background-color: #003300; 
