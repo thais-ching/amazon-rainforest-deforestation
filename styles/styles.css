@@ -189,9 +189,9 @@ header nav ul li a:active {
 /* Style the title overlay */
 .overlay-title {
     position: absolute;
-    top: 50%; /* Center vertically */
+    top: 40%; /* Center vertically */
     left: 20px; /* Align to the left */
-    transform: translateY(-50%); /* Center vertically with precision */
+    transform: translateY(-50%, 50%); /* Center vertically with precision */
     z-index: 2; /* Place above the gradient */
     color: #ffffff;
     font-family: 'DM Serif Display', serif;
@@ -237,28 +237,34 @@ header nav ul li a:active {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 950px) {
+    /* Adjust the overlay container */
+    .overlay-container {
+        height: 300px; /* Reduce height to fit smaller screens */
+    }
+
+    /* Adjust the title overlay */
     .overlay-title {
-        font-size: 50px; 
+        font-size: 60px; /* Reduce font size for smaller screens */
+        top: 50%; /* Keep centered vertically */
+        left: 50%; /* Keep centered horizontally */
+        transform: translate(-50%, -50%); /* Center perfectly */
+        white-space: normal; /* Allow wrapping if needed */
+        text-align: center; /* Ensure text alignment is centered */
     }
 }
 
 @media screen and (max-width: 480px) {
     .overlay-title {
-        font-size: 30px;
-        top: 50%;
-        transform: translateY(-70%);
+        font-size: 48px;
+        text-align: center;
     }
 }
 
-
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 360px) {
     .overlay-title {
-        font-size: 30px;
-        top: 0; /* Stick to the top of the container */
-        position: absolute; /* Ensure proper positioning */
-        width: 100%; 
-        text-align: center; /* Optional: Center the text horizontally */
+        font-size: 32px;
+        text-align: center;
     }
 }
 
@@ -798,33 +804,6 @@ footer p {
     /* Adjust the font size of the header text */
     header p {
         font-size: 14px; /* Smaller font size */
-    }
-
-    /* Adjust overlay container for mobile */
-    .overlay-container {
-        padding: 10px; /* Reduce padding inside the overlay container */
-    }
-
-    .overlay-container img {
-        width: 100%; /* Make the image take full width */
-        max-height: 300px; /* Limit the image height for mobile */
-    }
-
-    /* Adjust title overlay for smaller screens */
-    .overlay-title {
-        font-size: 40px; /* Smaller font size for title */
-        left: 15px; /* Adjust left position for better fit */
-        top: 60%; /* Adjust vertical alignment */
-    }
-
-    /* Adjust footer in the overlay */
-    .overlay-container footer {
-        font-size: 0.8rem; /* Reduce font size for footer */
-        padding: 5px 10px; /* Adjust padding for the footer */
-    }
-
-    .overlay-container footer p {
-        font-size: 0.9rem; /* Slightly smaller font size */
     }
 
     .figures-section h2 {
