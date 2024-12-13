@@ -202,15 +202,18 @@ header nav ul li a:active {
 /* Style the title overlay */
 .overlay-title {
     position: absolute;
-    top: 40%; /* Center vertically */
-    left: 20px; /* Align to the left */
-    transform: translateY(-50%, 50%); /* Center vertically with precision */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for both vertical and horizontal centering */
     z-index: 2; /* Place above the gradient */
     color: #ffffff;
     font-family: 'DM Serif Display', serif;
     font-size: 80px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Subtle shadow */
     background: transparent; /* Ensure no background is applied */
+    text-align: center; /* Align text in the center for multiline titles */
+    white-space: normal; /* Ensure text wraps if it's too long */
+    width: 50%; /* Limit width to ensure proper alignment for long text */
 }
 
 
