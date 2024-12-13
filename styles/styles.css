@@ -30,6 +30,7 @@ body {
 
 html, body {
     height: 100%; /* Full height */
+    width: 100%; /* Full width */
     margin: 0;    /* Remove default margin */
     display: flex; /* Flexbox layout */
     flex-direction: column; /* Stack content vertically */
@@ -173,7 +174,7 @@ header nav ul li a:active {
 .overlay-container {
     position: relative;
     width: 100%; /* Full width */
-    height: 400px;
+    min-height: 400px;
     margin: 0; /* Remove auto margins */
     overflow: hidden; /* Ensure no content spills outside */
     box-sizing: border-box; /* Include padding and borders in width */
@@ -222,7 +223,7 @@ header nav ul li a:active {
     background-color: #ffffff; /* White background */
     padding: 5px 10px; /* Compact padding */
     width: 100%; /* Ensure the footer spans the full width */
-    text-align: right; /* Align text to the right */
+    text-align: center; /* Align text to the right */
     box-sizing: border-box; /* Ensure padding is included in total width */
     z-index: 2;
 }
@@ -256,7 +257,7 @@ header nav ul li a:active {
 @media screen and (max-width: 950px) {
     /* Adjust the overlay container */
     .overlay-container {
-        height: 300px; /* Reduce height to fit smaller screens */
+       min-height: 300px; /* Reduce height to fit smaller screens */
     }
 
     /* Adjust the title overlay */
@@ -270,10 +271,18 @@ header nav ul li a:active {
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 550px) {
     .overlay-title {
-        font-size: 48px;
+        font-size: 54px;
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .overlay-title {
+        font-size: 36px;
+        text-align: center;
+
     }
 }
 
