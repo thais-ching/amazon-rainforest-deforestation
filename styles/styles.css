@@ -728,15 +728,14 @@ body.forest {
 
 #learn-more {
     text-align: center;
-
 }
 
 .image-container {
     position: relative; /* Stack images on top of each other */
     width: 160px; /* Set the width of the container */
     height: 160px; /* Set the height of the container */
-    margin: 0 auto; /* Center the container */
-    padding-bottom: 10px;
+    margin: 0 auto 40px; /* Center the container */
+    padding-bottom: 30px;
 }
 
 .fade-img {
