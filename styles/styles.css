@@ -30,7 +30,6 @@ body {
 
 html, body {
     height: 100%; /* Full height */
-    width: 100%; /* Full width */
     margin: 0;    /* Remove default margin */
     display: flex; /* Flexbox layout */
     flex-direction: column; /* Stack content vertically */
